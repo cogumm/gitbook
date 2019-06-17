@@ -1,23 +1,14 @@
-# ~\# home/
+# /home/
 
-## Getting Super Powers
+## Documentação do CoGUMm
 
-Becoming a super hero is a fairly straight forward process:
+Bem-vindo à minha documentação.
 
-```
-$ give me super-powers
-```
+#### Estarei utilizando esse Doc para documentar várias coisas do meu dia a dia como desenvolvedor, caso queira ajuda a documentar algum procedimento dê aquele "Opa" lá no [Telegram](https://t.me/CoGUMm)\[0\] e batemos um papo.
 
 {% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+ \[0\] https://t.me/CoGUMm
 {% endhint %}
-
-Once you're strong enough, save the world:
-
-```
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
 
 
 
