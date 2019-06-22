@@ -19,40 +19,55 @@ Clique em Preferências: Abrir configurações \(JSON\) e irá abrir o arquivo `
 
 ```javascript
 {
-  // Define o tema do VSCode
-  "workbench.colorTheme": "Dracula",
-  // Tema dos ícones
-  "workbench.iconTheme": "material-icon-theme",
-    
-  // Desativando o minimap
-  "editor.minimap.enabled": false,
-
-  "window.zoomLevel": 0,
-  "material-icon-theme.activeIconPack": "react",
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "editor.renderWhitespace": "none",
-  "editor.renderControlCharacters": true,
-  "breadcrumbs.enabled": false,
-  "editor.renderFinalNewline": true,
-  "editor.renderIndentGuides": true,
-
-  // Configuração da fonte
-  "editor.fontSize": 14,
-  "editor.lineHeight": 22,
-  "terminal.integrated.fontSize":14,
-  "editor.fontFamily": "'Fira Code'",
-  "editor.fontLigatures": true,
-  "terminal.integrated.rendererType": "dom",
-  "files.autoSave": "off",
-  
-
-  // Configurações do ESLINT
-  "eslint.autoFixOnSave": true,
-
-  // Bug da LF e CRLF
-  "files.eol": "\r\n",
-  "editor.tabSize": 2
+    // Define o tema do VSCode
+    "workbench.colorTheme": "Dracula",
+    // Tema dos ícones
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    // Desativando o minimap
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 0,
+    "material-icon-theme.activeIconPack": "react",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": true,
+    "editor.renderFinalNewline": true,
+    "editor.renderIndentGuides": true,
+    // Configuração da fonte
+    "editor.fontSize": 14,
+    "editor.lineHeight": 22,
+    // Tamanho da fonte no terminal
+    "terminal.integrated.fontSize": 14,
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true,
+    "terminal.integrated.rendererType": "dom",
+    "files.autoSave": "off",
+    // Configurações do ESLINT
+    "eslint.autoFixOnSave": true,
+    // Bug da LF e CRLF
+    "files.eol": "\r\n",
+    // 4 espaços sempre e desde sempre >)
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.rulers": [100, 120],
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    // Formatando o React
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    // Para de importar automaticamente os imports
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    // Árvore de diretórios
+    "breadcrumbs.enabled": true,
+    // Desabilitar as documentações
+    "editor.parameterHints.enabled": false,
+    // Integração do Pretiter com o ESLint
+    "prettier.eslintIntegration": true,
+    // Forçando o espaçamento em 4
+    "prettier.tabWidth": 4
 }
 ```
 
@@ -64,6 +79,7 @@ O VSCode existe uma infinidade de pligins que você pode personalizar da forma q
 * [Material Icon Theme](https://github.com/PKief/vscode-material-icon-theme) - Tema de ícones
 * [Discord Presence](https://marketplace.visualstudio.com/items?itemName=icrawl.discord-vscode)      - Plugin para mostrar nos status do Discord.
 * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)                          -  Plugin utilizado para padronizar código entre desenvolvedores como utilização de pontos e vírgulas, tamanho máximo de caracteres em linhas e todo outro tipo de padronização. Recomendo muito a utilização desse plugin junto aos [guias de estilo do AirBnB](https://www.npmjs.com/package/eslint-config-airbnb-base).
+* [Prettier](https://github.com/prettier/prettier-vscode)                       - Code formatter
 * Heroku e [heroku-cli](https://github.com/prashantkoshta/heroku-command-vscode)  - Verifica os deploy e status dos repositórios que tem as configurações do Heroku.
 * [Path Autocomplete](https://github.com/ionutvmi/path-autocomplete)  - Como sempre me perco nos caminhos e diretórios, esse complemento me ajuda a completar o caminho correto até o arquivo que quero.
 
