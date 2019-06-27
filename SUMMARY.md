@@ -12,6 +12,10 @@
 
 ## Tutoriais
 
-* [Executar o Docker sem precisar de sudo](tutoriais/tutoriais-docker-sem-precisar-de-sudo.md)
 * [Dando permissão de backup a um usuário PostgreSQL](tutoriais/tutoriais-permissao-backup-postgresql.md)
+
+## Docker
+
+* [Executar o Docker sem precisar de sudo](docker/docker-sudo.md)
+* [Pegando o IP do container](docker/docker-ip-container.md)
 
