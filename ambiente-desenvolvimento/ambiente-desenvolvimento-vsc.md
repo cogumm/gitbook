@@ -19,11 +19,11 @@ Clique em Preferências: Abrir configurações \(JSON\) e irá abrir o arquivo `
 
 ```javascript
 {
-    // Define o tema do VSCode
     "workbench.colorTheme": "Dracula",
-    // Tema dos ícones
     "workbench.iconTheme": "material-icon-theme",
+    // Terminal bash personalizado Windows
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
     // Desativando o minimap
     "editor.minimap.enabled": false,
     "window.zoomLevel": 0,
@@ -45,8 +45,26 @@ Clique em Preferências: Abrir configurações \(JSON\) e irá abrir o arquivo `
     "files.autoSave": "off",
     // Configurações do ESLINT
     "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        {
+            "language": "javascript",
+            "autoFix": true
+        },
+        {
+            "language": "javascriptreact",
+            "autoFix": true
+        },
+        {
+            "language": "typescript",
+            "autoFix": true
+        },
+        {
+            "language": "typescriptreact",
+            "autoFix": true
+        }
+    ],
     // Bug da LF e CRLF
-    "files.eol": "\r\n",
+    "files.eol": "\n",
     // 4 espaços sempre e desde sempre >)
     "editor.tabSize": 4,
     "editor.formatOnSave": true,
@@ -56,7 +74,8 @@ Clique em Preferências: Abrir configurações \(JSON\) e irá abrir o arquivo `
     },
     // Formatando o React
     "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
+        "javascript": "javascriptreact",
+        "nunjucks": "htmlt"
     },
     // Para de importar automaticamente os imports
     "javascript.updateImportsOnFileMove.enabled": "never",
@@ -67,13 +86,28 @@ Clique em Preferências: Abrir configurações \(JSON\) e irá abrir o arquivo `
     // Integração do Pretiter com o ESLint
     "prettier.eslintIntegration": true,
     // Forçando o espaçamento em 4
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "gitlens.defaultDateShortFormat": "DD, MM, YYYY",
+    "liveServer.settings.donotShowInfoMsg": true
 }
+
 ```
 
 ### Plugins
 
-O VSCode existe uma infinidade de pligins que você pode personalizar da forma que você desejar, irei listar os que utilizo ultimamente.
+O VSCode existe uma infinidade de plugins que você pode personalizar da forma que você desejar, irei listar os que utilizo ultimamente.
 
 * [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)           - Tema que estou utilizando bastante ultimamente.
 * [Material Icon Theme](https://github.com/PKief/vscode-material-icon-theme) - Tema de ícones
